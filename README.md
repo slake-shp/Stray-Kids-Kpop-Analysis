@@ -105,6 +105,9 @@ stray-kids-kpop-analysis/
 │   ├── 00a_test
 │       ├── test_korea.py
 │       ├── test_lastfm_connection.py
+│       ├── test_boundaries.py
+│       ├── test_join_boundaries.py
+│       ├── check_missing_country.py
 │   ├── 01_lastfm_artist_data.py
 │   ├── 02_lastfm_top_tracks.py
 │   ├── 03_lastfm_country_stats.py
@@ -214,6 +217,8 @@ The project uses current audience geography as an indicator of K-pop's global re
 1. Spotify API is now only for paid subscribers even for the Developer API usage therefore changed over to lastfm who still allow data extraction for all with a valid account.
 
 2. During the getting of artist data from the lastfm API it was needed to find how South Korea was being recorded therefore a test_korea.py script was added to find if this was 'South Korea', 'Republic of Korea' or 'Korea, Republic of' in their data. Originally started with 'South Korea' within scripting but returned 'NaN' therefore had to create this to find the error. 
+
+3. Only 12 countries found instead of 13 as France didn't join within the test_join_boundaries.py script. Therefore created a check_missing_countries.py script to find this out as it was unable to find from "ISO_A3" code 'FRA' as it is in data as '-99'. Change of join to "ADMO_A3".
 
 ---
 
