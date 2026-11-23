@@ -87,7 +87,11 @@ stray-kids-kpop-analysis/
 
 ├── data/
 │   ├── raw/
+│       ├── stray_kids_artist_info.csv
+│       ├── stray_kids_top_tracks.csv
+│       ├── world_bank_population.csv
 │   ├── processed/
+│       ├── stray_kids_country_stats.csv
 │   └── boundaries/
 │
 ├── docs/
@@ -95,12 +99,18 @@ stray-kids-kpop-analysis/
 ├── maps/
 │
 ├── scripts/
-│   ├── 01_spotify_data.py
-│   ├── 02_country_audience.py
-│   ├── 03_normalise.py
-│   ├── 04_spatial_join.py
-│   ├── 05_flow_map.py
-│   └── 06_statistics.py
+│   ├── 00_archive
+│       ├── 01_spotify_data.py
+│       ├── test_spotify_connection.py
+│   ├── 00a_test
+│       ├── test_korea.py
+│       ├── test_lastfm_connection.py
+│   ├── 01_lastfm_artist_data.py
+│   ├── 02_lastfm_top_tracks.py
+│   ├── 03_lastfm_country_stats.py
+│   ├── 03a_get_population_data.py
+│   ├── 04
+│   └── 05
 │
 ├── README.md
 ├── requirements.txt
