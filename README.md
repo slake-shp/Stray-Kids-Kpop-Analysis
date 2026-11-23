@@ -128,6 +128,16 @@ stray-kids-kpop-analysis/
 
 Country-level choropleth showing estimated Stray Kids listener density.
 
+    Natural Earth Countries
+        +
+    Stray Kids Market Strength
+        ↓
+    GeoPandas Join
+        ↓
+    Choropleth
+        ↓
+    PNG Export
+
 ### Map 2: Population-Normalised Popularity
 
 Listeners per million population.
