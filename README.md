@@ -3,7 +3,7 @@ This project investigates the global spread of K-pop through a geospatial analys
 
 The workflow combines data collection, data engineering, statistical analysis, spatial analysis, and cartographic design to produce a series of publication-quality maps and analytical outputs.
 
-#Research Question:
+# Research Question:
 
 **How has K-pop diffused globally from South Korea, and where are Stray Kids' strongest international audiences when adjusted for population?**
 
