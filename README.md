@@ -209,6 +209,14 @@ The project uses current audience geography as an indicator of K-pop's global re
 
 ---
 
+# Issues that came up
+
+1. Spotify API is now only for paid subscribers even for the Developer API usage therefore changed over to lastfm who still allow data extraction for all with a valid account.
+
+2. During the getting of artist data from the lastfm API it was needed to find how South Korea was being recorded therefore a test_korea.py script was added to find if this was 'South Korea', 'Republic of Korea' or 'Korea, Republic of' in their data. Originally started with 'South Korea' within scripting but returned 'NaN' therefore had to create this to find the error. 
+
+---
+
 ## Installation
 
 ```bash
