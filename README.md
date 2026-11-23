@@ -96,7 +96,11 @@ stray-kids-kpop-analysis/
 │
 ├── docs/
 ├── figures/
-├── maps/
+│   ├── maps
+│       ├── draft
+│           ├── stray_kids_market_strength_world_01.png
+│       ├── final
+│           ├── stray_kids_market_strength_world.png
 │
 ├── scripts/
 │   ├── 00_archive
@@ -112,8 +116,8 @@ stray-kids-kpop-analysis/
 │   ├── 02_lastfm_top_tracks.py
 │   ├── 03_lastfm_country_stats.py
 │   ├── 03a_get_population_data.py
-│   ├── 04
-│   └── 05
+│   ├── 04_world_chloropleth_map.py
+│   └── 05_diffusion_flow_map.py
 │
 ├── README.md
 ├── requirements.txt
