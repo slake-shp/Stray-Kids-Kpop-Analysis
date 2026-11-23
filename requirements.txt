@@ -1,0 +1,22 @@
+# General package requirements
+pandas>=2.0
+geopandas>=0.14
+matplotlib>=3.8
+seaborn>=0.13
+spotipy>=2.23
+requests>=2.31
+mapclassify>=2.6
+openpyxl>=3.1
+
+# Spatial statistics
+libpysal>=4.10
+esda>=2.5
+
+# Geometry operations
+shapely>=2.0
+
+# Environment variables
+python-dotenv>=1.0
+
+# Optional report generation
+reportlab>=4.0
