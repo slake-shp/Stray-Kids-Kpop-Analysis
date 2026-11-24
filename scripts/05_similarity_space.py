@@ -366,7 +366,7 @@ for radius in [
 # STAR FIELD
 # --------------------------------------------------
 
-np.random.seed(42)
+np.random.seed(62)
 
 n_stars = 1500
 
@@ -557,24 +557,33 @@ ax.add_artist(ab)
 
 # Label
 
-ax.text(
-    0,
-    -8_000_000,
-    "STRAY KIDS",
-    fontsize=18,
-    fontweight="bold",
-    color="white",
-    ha="center",
-    va="top",
-    bbox=dict(
-        facecolor="black",
-        edgecolor="white",
-        linewidth=0.5,
-        alpha=0.85,
-        pad=2
-    ),
-    zorder=101
+text = "STRAY KIDS"
+
+radius = 12_000_000
+
+angles = np.linspace(
+    np.deg2rad(120),
+    np.deg2rad(60),
+    len(text)
 )
+
+for char, angle in zip(text, angles):
+
+    x = radius * np.cos(angle)
+    y = radius * np.sin(angle)
+
+    ax.text(
+        x,
+        y,
+        char,
+        color="white",
+        fontsize=18,
+        fontweight="bold",
+        ha="center",
+        va="center",
+        rotation=np.degrees(angle) - 90,
+        zorder=101
+    )
 
 print("Logo shape:", logo.shape)
 
