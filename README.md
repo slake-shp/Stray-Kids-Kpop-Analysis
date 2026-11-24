@@ -23,7 +23,7 @@ The workflow combines data collection, data engineering, statistical analysis, s
 
 ### Music Data
 
-- <s>Spotify Web API</s> - now requires premium features so being changed to
+- <s>Spotify Web API</s> - now requires premium features so instead using below
 - Last.fm API
 
 ### Demographic Data
@@ -95,12 +95,14 @@ stray-kids-kpop-analysis/
 │   └── boundaries/
 │
 ├── docs/
+│
 ├── figures/
 │   ├── maps
 │       ├── draft
 │           └── stray_kids_market_strength_world_01.png
 │       ├── final
-│           └── stray_kids_market_strength_world.png
+│           ├── stray_kids_market_strength_world.png
+│           └── stray_kids_orbital_system.png
 │
 ├── scripts/
 │   ├── 00_archive
@@ -117,7 +119,8 @@ stray-kids-kpop-analysis/
 │   ├── 03_lastfm_country_stats.py
 │   ├── 03a_get_population_data.py
 │   ├── 04_world_chloropleth_map.py
-│   └── 05_diffusion_flow_map.py
+│   ├── 05_similarity_space.py
+│   └── 06_diffusion_flow_map.py
 │
 ├── README.md
 ├── requirements.txt
