@@ -89,7 +89,7 @@ stray-kids-kpop-analysis/
 │   ├── raw/
 │       ├── stray_kids_artist_info.csv
 │       ├── stray_kids_top_tracks.csv
-│       ├── world_bank_population.csv
+│       └── world_bank_population.csv
 │   ├── processed/
 │       ├── stray_kids_country_stats.csv
 │   └── boundaries/
@@ -98,20 +98,20 @@ stray-kids-kpop-analysis/
 ├── figures/
 │   ├── maps
 │       ├── draft
-│           ├── stray_kids_market_strength_world_01.png
+│           └── stray_kids_market_strength_world_01.png
 │       ├── final
-│           ├── stray_kids_market_strength_world.png
+│           └── stray_kids_market_strength_world.png
 │
 ├── scripts/
 │   ├── 00_archive
 │       ├── 01_spotify_data.py
-│       ├── test_spotify_connection.py
+│       └── test_spotify_connection.py
 │   ├── 00a_test
 │       ├── test_korea.py
 │       ├── test_lastfm_connection.py
 │       ├── test_boundaries.py
 │       ├── test_join_boundaries.py
-│       ├── check_missing_country.py
+│       └── check_missing_country.py
 │   ├── 01_lastfm_artist_data.py
 │   ├── 02_lastfm_top_tracks.py
 │   ├── 03_lastfm_country_stats.py
